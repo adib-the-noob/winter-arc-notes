@@ -170,17 +170,100 @@ SSDs behave very differently from traditional drives, and understanding this mat
 	- Understanding how storage works helps engineers design **efficient data systems**, reduce **I/O bottlenecks**, and extend **device lifespan**.
 	- 
 ---
-
 ## Networks
-- NIC -> Network Interface controller
-- Communicate with Other Hosts
-- Protocol Implements
+
+Networking allows a system to **communicate with other systems** — exchanging data, requests, and resources across local or global connections.  
+It’s one of the most critical layers of modern computing because almost no application lives in isolation anymore.
+
+### Network Interface Controller (NIC)
+
+- The **NIC (Network Interface Controller)** is the hardware component that connects your system to a network.
+    
+- It handles **sending and receiving packets**, converting between the system’s internal data representation and physical signals (electrical, optical, or wireless).
+    
+- Each NIC has a unique **MAC address**, used to identify the device on a local network.
+### Communication Between Hosts
+
+- Every computer (host) on a network can **communicate with others** through data packets.
+    
+- These packets move through **layers of protocols**, from low-level hardware transmission to high-level application communication.
+    
+- For example, sending a message over HTTP involves multiple layers underneath:
+    
+    ```
+    Application (HTTP)
+    ↓
+    Transport (TCP)
+    ↓
+    Network (IP)
+    ↓
+    Link (Ethernet/Wi-Fi)
+    ↓
+    Physical (bits over cable or air)
+    ```
+    
+- Each layer **abstracts** complexity from the one below, following the **OSI model** (Open Systems Interconnection) — a conceptual framework describing how data travels through networks.
+### Protocols
+
+- **Protocols** are agreed-upon rules that define how data is formatted, transmitted, and acknowledged.  
+    Common ones include:
+    
+    - **TCP (Transmission Control Protocol):** Reliable, ordered, and error-checked delivery (used for web, email, etc.).
+        
+    - **UDP (User Datagram Protocol):** Lightweight, faster, but unreliable — used for streaming, gaming, etc.
+        
+    - **IP (Internet Protocol):** Handles addressing and routing packets between hosts.
+        
+- The **NIC implements** the lowest layers of these protocols in hardware or firmware, while the **kernel implements** higher-level protocol stacks (TCP/IP, ARP, ICMP, etc.) in software.
+---
 ## Kernel
-- The Core of OS
-- Fundamentals of OS == Fundamentals of Kernel
-- Manages the Resources
-- THe OS is more than the Kernel
-	- GUI, Command Line, Ui and Tooling
-	- Exmple: Top is a command that extracts processes
-	- Distros is all about Tooling
-	- 
+
+The **kernel** is the **core** of the operating system — the piece that directly manages hardware, schedules processes, and enforces security and isolation.  
+If the OS were a city, the kernel would be the city’s central government — unseen by most citizens, but responsible for law, order, and infrastructure.
+
+### Fundamentals
+
+- The **fundamentals of the OS** are essentially the **fundamentals of the kernel**, because it handles:
+    
+    - **Process management** (creating, scheduling, terminating programs)
+        
+    - **Memory management** (allocation, paging, swapping)
+        
+    - **Device management** (interfacing with drivers and peripherals)
+        
+    - **File system operations** (handling read/write and permissions)
+        
+    - **Networking stack** (implementing TCP/IP and managing NICs)
+### The OS is More Than the Kernel
+
+While the kernel is the foundation, the **operating system** includes much more — all the tooling, user interfaces, and utilities that make the machine usable.
+
+- **User Interface Layers:**
+    
+    - **GUI (Graphical User Interface):** Windows, icons, menus, and everything visible to end-users.
+        
+    - **CLI (Command-Line Interface):** Tools like `bash`, `zsh`, and `powershell` that interact with kernel-level operations through commands.
+        
+- **Tooling and Utilities:**
+    
+    - Commands like `top`, `ps`, and `ls` are **user-space programs** that query the kernel for system information.
+        
+    - They don’t manage hardware directly — they **ask the kernel** for data about running processes, memory usage, etc.
+        
+- **Distributions (Distros):**
+    
+    - Especially in Linux, **distros** are built around the same kernel but differ in **tooling, package management, and user experience**.
+        
+    - For example: Ubuntu, Fedora, and Arch all use the **Linux kernel**, but provide different ecosystems and utilities.
+---
+### Summary
+
+- **Networking** connects systems through hardware (NICs) and layered communication protocols.
+    
+- **The Kernel** is the core component that manages hardware, memory, processes, and devices.
+    
+- **The OS** extends beyond the kernel — adding user interfaces, tools, and environments that make the system usable.
+    
+- Together, they form a complete stack — from **hardware** and **kernel** up through **network protocols** and **user space tools** — the backbone of every computing system.
+
+---
