@@ -1,0 +1,202 @@
+{
+  "main": {
+    "id": "b9859eac766a080a",
+    "type": "split",
+    "children": [
+      {
+        "id": "47a7486b2bfd7f69",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "71be29b78e6ff933",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Winter Arc/Fundamentals/OS/System Architecture Overview.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "System Architecture Overview"
+            }
+          },
+          {
+            "id": "1a19df1af05d8d3f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Winter Arc/Fundamentals/OS/Why an OS?.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Why an OS?"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c8d26b02769c7842",
+    "type": "split",
+    "children": [
+      {
+        "id": "d6b76d78ad2e0ceb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8d92cad886531d23",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "f19856ffe73b1e31",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "5962dd4a1a1aa457",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7f07e27f54913901",
+    "type": "split",
+    "children": [
+      {
+        "id": "688fe25a55f50952",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ac4dcb4a5f35dda0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Winter Arc/Fundamentals/OS/Why an OS?.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Why an OS?"
+            }
+          },
+          {
+            "id": "f5226d74da5bb6d6",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Winter Arc/Fundamentals/OS/Why an OS?.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Why an OS?"
+            }
+          },
+          {
+            "id": "99f4d4f865c2f820",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "bfb1ea6ed3cfc928",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Winter Arc/Fundamentals/OS/Why an OS?.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Why an OS?"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "8d92cad886531d23",
+  "lastOpenFiles": [
+    "Winter Arc/Fundamentals/OS/Components",
+    "Winter Arc/Fundamentals/OS/Why an OS?.md",
+    "Winter Arc/Fundamentals/OS/Operating Systems by H. Nasser.md",
+    "Winter Arc/Fundamentals/OS/System Architecture Overview.md",
+    "Winter Arc/medias/Pasted image 20251006161412.png",
+    "Winter Arc/medias",
+    "Winter Arc/Roadmap/Plans for Next 3 Months.md",
+    "Winter Arc/Fundamentals/OS",
+    "Operating Systems by H. Nasser.md",
+    "Winter Arc/Fundamentals",
+    "Welcome.md",
+    "Winter Arc/Roadmap",
+    "Winter Arc"
+  ]
+}
