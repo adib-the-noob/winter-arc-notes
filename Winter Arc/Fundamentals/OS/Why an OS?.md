@@ -1,3 +1,4 @@
+#cs/fundametals
 ## Concept Overview
 
 If you build an application on your **own custom OS**, that application will only run on **that specific system**. It won’t work anywhere else because your OS defines how hardware and software communicate.  

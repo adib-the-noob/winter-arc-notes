@@ -1,3 +1,5 @@
+#cs/fundametals 
+
 Every computer system is built from **resources** — CPU, memory, storage, and I/O devices — managed by the **Operating System (OS)**.  
 At the heart of the OS lies the **kernel**, the core component responsible for controlling all system resources, managing processes, and providing the foundation for system calls and device drivers.
 
@@ -265,5 +267,111 @@ While the kernel is the foundation, the **operating system** includes much more 
 - **The OS** extends beyond the kernel — adding user interfaces, tools, and environments that make the system usable.
     
 - Together, they form a complete stack — from **hardware** and **kernel** up through **network protocols** and **user space tools** — the backbone of every computing system.
+
+---
+## File System
+
+Storage devices — whether HDDs or SSDs — ultimately store data as **blocks of raw bytes**.  
+But humans and applications don’t want to deal with byte offsets and block addresses; we prefer **files and directories**.  
+That’s where the **File System** comes in — it’s an **abstraction layer** that organizes and manages data stored on physical media.
+
+### Core Idea
+
+- **Storage = Raw Bytes**  
+    At the hardware level, a disk is just a continuous series of addressable blocks.  
+    Without a file system, there’s no structure — just raw, unorganized data.
+    
+- **File System = Structured View**  
+    The file system provides a **logical structure** — files, folders, permissions, metadata, timestamps, and ownership.  
+    It maps high-level file operations (`open`, `read`, `write`, `delete`) to low-level disk operations.
+    
+- **Abstraction Example:**  
+    When you save a file called `notes.txt`, the file system:
+    
+    1. Allocates a number of **blocks** on disk.
+        
+    2. Writes your file data into those blocks.
+        
+    3. Updates internal metadata (directory structure, inode table, allocation maps).  
+        You never see the blocks directly — only the named file.
+        
+
+---
+
+## Logical Block Addressing (LBA)
+
+Older drives used **CHS (Cylinder–Head–Sector)** addressing — a physical mapping based on drive geometry.  
+Modern systems use **Logical Block Addressing (LBA)**, which simplifies everything.
+
+### How LBA Works
+
+- The OS exposes the disk as a **linear array of blocks**, each with a unique number — starting from block `0`.
+    
+- The **disk controller** handles **translation** between logical block numbers and their physical locations on the medium.  
+    This allows:
+    
+    - Easier software interaction
+        
+    - Simplified addressing (no more heads or sectors)
+        
+    - Compatibility across devices and technologies
+        
+
+Essentially:
+
+```
+Disk = [Block 0][Block 1][Block 2]...[Block N]
+File System → requests block numbers
+Controller → maps to physical flash/magnetic locations
+```
+
+### Block Mapping and Overhead
+
+- File systems deal with data in **fixed-size blocks** — often 4 KB.
+    
+- If a file is smaller than one block (say 3 bytes), it still **occupies a full block** — the smallest allocatable unit.  
+    So, even a tiny file takes **4 KB** of space.
+    
+- This design simplifies I/O and improves speed (because block-based operations are efficient), but it also introduces **internal fragmentation** — wasted space inside partially used blocks.
+    
+
+### Common File Systems
+
+Different operating systems use different file systems — each with unique design goals:
+
+- **FAT32:** Simple, widely compatible, limited to 4 GB file size.
+    
+- **NTFS (New Technology File System):** Used in Windows; supports permissions, journaling, compression.
+    
+- **ext4:** Default in most Linux systems; robust, fast, supports large files.
+    
+- **Btrfs:** Modern Linux filesystem with snapshots, checksums, and advanced storage management.
+    
+- **tmpfs:** Temporary, memory-backed filesystem — used for fast access to transient data.
+    
+
+### Performance and Optimization
+
+- The **file system** and **disk controller** work together to optimize access patterns — caching, buffering, and scheduling reads/writes.
+    
+- Techniques like **journaling** (used in ext4, NTFS) ensure data consistency after crashes.
+    
+- **Additional abstraction layers** (like LBA and filesystem caching) add overhead, but modern OSs and SSDs are designed to minimize this cost.
+    
+
+---
+
+### Summary
+
+- The **File System** abstracts the raw block-based storage into usable files and directories.
+    
+- **LBA** treats the disk as a flat array of logical blocks, simplifying addressing and management.
+    
+- **Block mapping** means even small files occupy full blocks, trading space for simplicity and speed.
+    
+- Different file systems (ext4, NTFS, Btrfs, etc.) implement different optimizations for reliability, performance, and features.
+    
+- Understanding how data travels from a **file write** to a **physical block** builds real intuition about performance tuning and system design.
+    
 
 ---
