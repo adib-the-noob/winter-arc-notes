@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "47a7486b2bfd7f69",
+        "id": "38f28462795abf78",
         "type": "tabs",
         "children": [
           {
-            "id": "1a19df1af05d8d3f",
+            "id": "441cc79bb54b7bd7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Winter Arc/Fundamentals/OS/System Architecture Overview.md",
+                "file": "Winter Arc/Fundamentals/OS/The Anatomy Of Process/Program Vs Process Explained.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "System Architecture Overview"
+              "title": "Program Vs Process Explained"
             }
           }
         ]
@@ -169,18 +169,24 @@
       "bases:Create new base": false
     }
   },
-  "active": "1a19df1af05d8d3f",
+  "active": "441cc79bb54b7bd7",
   "lastOpenFiles": [
     "Winter Arc/Fundamentals/OS/Operating Systems by H. Nasser.md",
-    "Winter Arc/Fundamentals/OS/Program vs Process.md",
-    "Winter Arc/Fundamentals/OS/System Architecture Overview.md",
+    "Winter Arc/Fundamentals/OS/The Anatomy Of Process/Program Vs Process Explained.md",
+    "Winter Arc/Roadmap/Plans for Next 3 Months.md",
     "Winter Arc/Fundamentals/OS/Why an OS?.md",
+    "Winter Arc/Fundamentals/OS/System Architecture Overview.md",
+    "Winter Arc/Fundamentals/OS/Untitled.canvas",
+    "Winter Arc/Fundamentals/OS/User Space Vs Kernel Space.md",
+    "Winter Arc/Fundamentals/OS/The Anatomy Of Process",
+    "Winter Arc/medias/Pasted image 20251006224046.png",
+    "Winter Arc/medias/Screenshot From 2025-10-06 22-40-45.png",
+    "Winter Arc/Fundamentals/OS/Program vs Process.md",
+    "Winter Arc/medias",
     "Untitled.base",
-    "Winter Arc/Untitled",
     "Winter Arc/Fundamentals/OS/Components",
     "Winter Arc/medias/Pasted image 20251006161412.png",
     "Winter Arc/medias",
-    "Winter Arc/Roadmap/Plans for Next 3 Months.md",
     "Winter Arc/Fundamentals/OS",
     "Operating Systems by H. Nasser.md",
     "Winter Arc/Fundamentals",
