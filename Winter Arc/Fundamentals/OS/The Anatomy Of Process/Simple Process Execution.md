@@ -1,0 +1,9 @@
+- Machine Code is read from bottom to Top
+- Cost Time
+	- Register Access => 1 ns
+	- L1 Cache -> 2ns
+	- L2 Cache -> 7ns
+	- Main Memory -> 100ns
+	- SSD -> 150 us (Microsecond)
+	- HDD -> 10ms
+	- 

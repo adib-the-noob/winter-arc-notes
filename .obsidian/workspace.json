@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Winter Arc/Fundamentals/OS/The Anatomy Of Process/Program Vs Process - More.md",
+                "file": "Winter Arc/Fundamentals/OS/The Anatomy Of Process/Simple Process Execution.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Program Vs Process - More"
+              "title": "Simple Process Execution"
             }
           }
         ],
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Winter Arc/Fundamentals/OS/Why an OS?.md",
+                "file": "Winter Arc/Fundamentals/OS/The Anatomy Of Process/Simple Process Execution.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Why an OS?"
+              "title": "Backlinks for Simple Process Execution"
             }
           },
           {
@@ -187,33 +187,33 @@
   },
   "active": "91c6ff66b0b37e1c",
   "lastOpenFiles": [
-    "Winter Arc/Fundamentals/OS/The Anatomy Of Process/Program Vs Process Explained.md",
-    "Winter Arc/Fundamentals/OS/The Anatomy Of Process/Program Vs Process - More.md",
     "Winter Arc/medias/Pasted image 20251008025208.png",
+    "Winter Arc/medias/Screenshot From 2025-10-06 22-40-45.png",
+    "Winter Arc/medias",
+    "Winter Arc/Roadmap/Plans for Next 3 Months.md",
+    "Winter Arc/Roadmap",
+    "Winter Arc/Fundamentals/OS/The Anatomy Of Process/Program Vs Process - More.md",
+    "Winter Arc/Fundamentals/OS/The Anatomy Of Process/Simple Process Execution.md",
+    "Winter Arc/Fundamentals/OS/The Anatomy Of Process/Program Vs Process Explained.md",
     "Excalidraw/Programs.excalidraw.md",
     "Excalidraw/Drawing 2025-10-07 22.25.28.excalidraw.md",
     "Excalidraw",
     "Winter Arc/Fundamentals/OS/The Anatomy Of Process/Untitled.canvas",
     "Winter Arc/Fundamentals/Database",
     "Winter Arc/Fundamentals/OS/Operating Systems by H. Nasser.md",
-    "Winter Arc/Roadmap/Plans for Next 3 Months.md",
     "Winter Arc/Fundamentals/OS/Why an OS?.md",
     "Winter Arc/Fundamentals/OS/System Architecture Overview.md",
     "Winter Arc/Fundamentals/OS/Untitled.canvas",
     "Winter Arc/Fundamentals/OS/User Space Vs Kernel Space.md",
     "Winter Arc/Fundamentals/OS/The Anatomy Of Process",
     "Winter Arc/medias/Pasted image 20251006224046.png",
-    "Winter Arc/medias/Screenshot From 2025-10-06 22-40-45.png",
     "Winter Arc/Fundamentals/OS/Program vs Process.md",
-    "Winter Arc/medias",
     "Untitled.base",
     "Winter Arc/Fundamentals/OS/Components",
     "Winter Arc/medias/Pasted image 20251006161412.png",
-    "Winter Arc/medias",
     "Winter Arc/Fundamentals/OS",
     "Operating Systems by H. Nasser.md",
     "Winter Arc/Fundamentals",
-    "Welcome.md",
-    "Winter Arc/Roadmap"
+    "Welcome.md"
   ]
 }
